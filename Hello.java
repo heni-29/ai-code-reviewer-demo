@@ -1,6 +1,7 @@
 public class Hello {
 
-    public String getMessage(String name) {
-        return "Hello " + name + "!";
-    }
+    public String getUser(String userId) {
+    String query = "SELECT * FROM users WHERE id = '" + userId + "'";
+    return database.execute(query);
+}
 }
