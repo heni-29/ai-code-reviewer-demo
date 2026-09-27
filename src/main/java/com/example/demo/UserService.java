@@ -10,5 +10,6 @@ public class UserService {
 
     public String getUser(String id) {
         return repository.findUser(null);
+        //testing purpose
     }
 }
